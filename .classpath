@@ -28,5 +28,8 @@
 	<classpathentry kind="lib" path="lib/spring/spring-webmvc-portlet-4.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/spring-websocket-4.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/javax.inject.jar"/>
+	<classpathentry kind="lib" path="lib/spring/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/spring/aspectjweaver-1.8.4.jar"/>
+	<classpathentry kind="lib" path="lib/spring/javassist-3.19.0-GA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
