@@ -7,5 +7,9 @@ public class AspectBiz {
 		
 //		throw new RuntimeException();
 	}
+	
+	public void init(String bizName, int times) {
+		System.out.println("AspectBiz init: " + bizName + " " + times);
+	}
 
 }

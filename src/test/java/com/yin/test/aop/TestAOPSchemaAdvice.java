@@ -20,4 +20,10 @@ public class TestAOPSchemaAdvice extends UnitTestBase {
 		biz.biz();
 	}
 	
+	@Test
+	public void testInit() {
+		AspectBiz biz = super.getBean("aspectBiz");
+		biz.init("MoocService", 3);
+	}
+	
 }
