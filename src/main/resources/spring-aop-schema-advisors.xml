@@ -10,19 +10,19 @@
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<context:component-scan base-package="com.imooc.aop.schema"></context:component-scan>
+	<context:component-scan base-package="com.yin.aop.schema"></context:component-scan>
 
 	<aop:config>
 		<aop:aspect id="concurrentOperationRetry" ref="concurrentOperationExecutor">
 			<aop:pointcut id="idempotentOperation"
-				expression="execution(* com.imooc.aop.schema.advisors.service.*.*(..)) " />
-<!--      			expression="execution(* com.imooc.aop.schema.service.*.*(..)) and -->
-<!--         						@annotation(com.imooc.aop.schema.Idempotent)" /> -->
+				expression="execution(* com.yin.aop.schema.advisors.service.*.*(..)) " />
+<!--      			expression="execution(* com.yin.aop.schema.service.*.*(..)) and -->
+<!--         						@annotation(com.yin.aop.schema.Idempotent)" /> -->
 			<aop:around pointcut-ref="idempotentOperation" method="doConcurrentOperation" />
 		</aop:aspect>
 	</aop:config>
 	
-	<bean id="concurrentOperationExecutor" class="com.imooc.aop.schema.advisors.ConcurrentOperationExecutor">
+	<bean id="concurrentOperationExecutor" class="com.yin.aop.schema.advisors.ConcurrentOperationExecutor">
 		<property name="maxRetries" value="3" />
 		<property name="order" value="100" />
 	</bean>
