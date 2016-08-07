@@ -6,7 +6,7 @@ import org.springframework.dao.PessimisticLockingFailureException;
 
 public class ConcurrentOperationExecutor implements Ordered {
 
-	private static final int DEFAULT_MAX_RETRIES = 2;
+	private static final int DEFAULT_MAX_RETRIES = 5;
 
 	private int maxRetries = DEFAULT_MAX_RETRIES;
 
