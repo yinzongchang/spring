@@ -2,6 +2,7 @@
 /config.properties
 /config.txt
 /config.xml
+/spring-aop-api.xml
 /spring-aop-schema-advice.xml
 /spring-aop-schema-advisors.xml
 /spring-autowiring.xml
@@ -12,4 +13,3 @@
 /spring-ioc.xml
 /spring-lifecycle.xml
 /spring-resource.xml
-/spring-aop-api.xml

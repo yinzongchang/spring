@@ -9,4 +9,6 @@ public class LockMixinAdvisor extends DefaultIntroductionAdvisor {
 	public LockMixinAdvisor() {
         super(new LockMixin(), Lockable.class);
     }
+	
+	
 }
